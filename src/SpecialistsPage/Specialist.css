@@ -1,0 +1,10 @@
+.social-links a {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .social-links i {
+    margin-right: 10px;
+  }

@@ -1,0 +1,125 @@
+
+    [
+      {
+        "id": 1,
+        "details": {
+          "title": "General Checkup",
+          "description": "A comprehensive health checkup designed to assess and monitor your overall well-being. Our expert medical team will conduct thorough examinations, including vital signs, blood tests, and screenings. This service is essential for preventive healthcare and early detection of potential issues."
+        },
+        "image": "https://images.pexels.com/photos/8176917/pexels-photo-8176917.jpeg",
+        "relatedSpecialists": [
+          {
+            "id": 101,
+            "name": "Dr. John Smith",
+            "specialty": "General Practitioner",
+            "image": "https://img.freepik.com/free-photo/doctor-with-his-arms-crossed-white-background_1368-5790.jpg"
+          },
+          {
+            "id": 102,
+            "name": "Dr. Emily Davis",
+            "specialty": "Internal Medicine",
+            "image": "https://img.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "details": {
+          "title": "Cardiology Consultation",
+          "description": "Specialized care for heart-related issues provided by our experienced cardiology team. Whether you need routine cardiovascular assessments or have specific cardiac concerns, our cardiologists and cardiac surgeons are dedicated to delivering personalized and advanced care."
+        },
+        "image": "https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg",
+        "relatedSpecialists": [
+          {
+            "id": 103,
+            "name": "Dr. Sarah Johnson",
+            "specialty": "Cardiologist",
+            "image": "https://img.freepik.com/premium-photo/medical-concept-indian-beautiful-female-doctor-white-coat-with-stethoscope-waist-up-medical-student-woman-hospital-worker-looking-camera-smiling-studio-blue-background_185696-621.jpg"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "details": {
+          "title": "Dental Care",
+          "description": "Comprehensive oral health services, including cleanings, treatments, and preventive care. Our dedicated dental team, comprised of dentists and orthodontists, is committed to promoting good oral hygiene and addressing any dental concerns you may have."
+        },
+        "image": "https://images.pexels.com/photos/3779709/pexels-photo-3779709.jpeg",
+        "relatedSpecialists": [
+          {
+            "id": 105,
+            "name": "Dr. Mark Anderson",
+            "specialty": "Dentist",
+            "image": "https://img.freepik.com/free-photo/doctor-smiling-with-stethoscope_1154-36.jpg"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "details": {
+          "title": "Pediatric Care",
+          "description": "Specialized healthcare for infants, children, and adolescents, provided by our experienced pediatricians and pediatric surgeons. Our pediatric department focuses on the unique health needs of young patients, ensuring their well-being and development."
+        },
+        "image": "https://img.freepik.com/free-photo/my-daughter-isn-t-afraid-pay-visit-here_329181-7634.jpg",
+        "relatedSpecialists": [
+          {
+            "id": 101,
+            "name": "Dr. John Smith",
+            "specialty": "General Practitioner",
+            "image": "https://img.freepik.com/free-photo/doctor-with-his-arms-crossed-white-background_1368-5790.jpg"
+          },
+          {
+            "id": 104,
+            "name": "Dr. Amanda Miller",
+            "specialty": "Pediatric Surgeon",
+            "image": "https://img.freepik.com/free-photo/i-love-my-job-so-much_329181-2178.jpg"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "details": {
+          "title": "Women's Health",
+          "description": "Comprehensive healthcare services tailored for women, including obstetric and gynecological care. Our team of women's health specialists is dedicated to providing personalized and compassionate care for women at every stage of life."
+        },
+        "image": "https://img.freepik.com/premium-photo/asian-female-gynecologist-is-examining-expectant-mother-with-stethoscope-writing-clipboard-during-pregnancy-check-hospital_678158-4291.jpg",
+        "relatedSpecialists": [
+          {
+            "id": 106,
+            "name": "Dr. Rachel Turner",
+            "specialty": "Obstetrician-Gynecologist",
+            "image": "https://img.freepik.com/free-photo/portrait-cheerful-male-doctor-dressed-uniform_171337-1531.jpg"
+          },
+          {
+            "id": 109,
+            "name": "Dr. Michelle Lewis",
+            "specialty": "Breast Specialist",
+            "image": "https://img.freepik.com/free-photo/portrait-smiling-young-woman-doctor-healthcare-medical-worker-pointing-fingers-left-showing-clini_1258-88108.jpg"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "details": {
+          "title": "Orthopedic Care",
+          "description": "Specialized care for musculoskeletal conditions and injuries. Our orthopedic team, including orthopedic surgeons and physical therapists, is committed to restoring mobility, reducing pain, and improving the quality of life for our patients."
+        },
+        "image": "https://img.freepik.com/free-photo/young-physiotherapist-examining-customer-s-leg-while-colleague-noting-clipboard-hospital_662251-1651.jpg",
+        "relatedSpecialists": [
+          {
+            "id": 108,
+            "name": "Dr. Laura Miller",
+            "specialty": "Rehabilitation Services",
+            "image": "https://img.freepik.com/free-photo/female-doctor-hospital_23-2148827760.jpg"
+          },
+          {
+            "id": 107,
+            "name": "Dr. Robert Turner",
+            "specialty": "Orthopedic Sergeon",
+            "image": "https://img.freepik.com/free-photo/young-doctor-getting-ready-work_23-2149393694.jpg"
+          }
+        ]
+      }
+    ]
+  
+  

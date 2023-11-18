@@ -1,38 +1,43 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+.services-heading {
+      font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  color: #333; /* Adjust the color as needed */
   text-align: center;
+  margin-bottom: 50px;
+  margin-top: 100px;
+  border-bottom: 2px solid #3498db; /* Choose a border color */
+  padding-bottom: 10px;
+  font-weight: bold;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.specialist-image-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.specialist-frame{
+      width: 200px; /* Adjust the width of the frame as needed */
+      height: 200px; /* Adjust the height of the frame as needed */
+      border: 2px solid blue; /* Blue border color */
+      border-radius: 50%; /* Creates a circle by setting border-radius to 50% */
+      overflow: hidden; /* Clip content outside the circle */
+      position: relative;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.specialist-img{
+      width: 100%; /* Make the image fill the circle */
+      height: 100%; /* Make the image fill the circle */
+      object-fit: cover; /* Maintain aspect ratio and cover the circle */
+      position: absolute;
+      top: 0;
+      left: 0;
 }
-
-.App-link {
-  color: #61dafb;
+h1,h2,h3,h4,h5,h6,p,span,button,a{
+       font-family: 'Roboto', sans-serif;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card:hover{
+      cursor: pointer;
+      border: 1px solid rgba(0, 0, 255, 0.5);
+      transition: border 1.5s ease;
 }

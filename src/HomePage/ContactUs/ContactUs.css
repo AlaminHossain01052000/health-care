@@ -1,0 +1,28 @@
+/* Add styling for the ContactUs component */
+
+.google-map {
+    border: 0; /* Remove border around the map */
+  }
+  
+  .contact-us-container {
+    background-color: #f8f9fa; /* Add a background color for the contact container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-info h3 {
+    color: #007bff; /* Bootstrap primary color for headings */
+  }
+  
+  .social-links a {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .social-links i {
+    margin-right: 10px;
+  }
+  

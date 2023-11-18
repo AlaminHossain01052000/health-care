@@ -1,0 +1,360 @@
+[
+  {
+    "id": 101,
+    "name": "Dr. John Smith",
+    "contactNumber": "+1234567890",
+    "linkedinProfile": "https://www.linkedin.com/in/dr-john-smith",
+    "image": "https://img.freepik.com/free-photo/doctor-with-his-arms-crossed-white-background_1368-5790.jpg",
+    "whatsapp": "+1234567890",
+    "educationalQualification": "MD in Internal Medicine, Board Certified",
+    "specialistSection": "Internal Medicine",
+    "appointmentSlots": [
+      {
+        "appointmentNo":"1",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"9:00 AM - 9:30 AM"
+      },
+      {
+        "appointmentNo":"2",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"10:00 AM - 10:30 AM"
+      },
+      {
+        "appointmentNo":"3",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"11:00 AM - 11:30 AM"
+      },
+      {
+        "appointmentNo":"4",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"2:00 PM - 2:30 PM"
+      }
+      
+    ],
+    "appointmentAvailableDay": [1,3,4], 
+    "healthcareBuildingNo": "A-123",
+    "roomNo": "203",
+    "linkedHealthcareServiceId": 1
+  },
+  {
+    "id": 102,
+    "name": "Dr. Emily Davis",
+    "contactNumber": "+9876543210",
+    "linkedinProfile": "https://www.linkedin.com/in/dr-emily-davis",
+    "image": "https://img.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg",
+    "whatsapp": "+9876543210",
+    "educationalQualification": "DDS, MDS in Orthodontics",
+    "specialistSection": "Orthodontics",
+    "appointmentSlots": [
+      {
+        "appointmentNo":"1",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"9:00 AM - 9:30 AM"
+      },
+      {
+        "appointmentNo":"2",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"10:00 AM - 10:30 AM"
+      },
+      {
+        "appointmentNo":"3",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"11:00 AM - 11:30 AM"
+      },
+      {
+        "appointmentNo":"4",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"2:00 PM - 2:30 PM"
+      }
+      
+    ],
+    "appointmentAvailableDay": [1,2,4], 
+    "healthcareBuildingNo": "B-456",
+    "roomNo": "102",
+    "linkedHealthcareServiceId": 3
+  },
+  {
+    "id": 103,
+    "name": "Dr. Sarah Johnson",
+    "contactNumber": "+1122334455",
+    "linkedinProfile": "https://www.linkedin.com/in/dr-sarah-johnson",
+    "image": "https://img.freepik.com/premium-photo/medical-concept-indian-beautiful-female-doctor-white-coat-with-stethoscope-waist-up-medical-student-woman-hospital-worker-looking-camera-smiling-studio-blue-background_185696-621.jpg",
+    "whatsapp": "+1122334455",
+    "educationalQualification": "MBBS, MD in Cardiology",
+    "specialistSection": "Cardiology",
+    "appointmentSlots": [
+      {
+        "appointmentNo":"1",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"9:00 AM - 9:30 AM"
+      },
+      {
+        "appointmentNo":"2",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"10:00 AM - 10:30 AM"
+      },
+      {
+        "appointmentNo":"3",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"11:00 AM - 11:30 AM"
+      },
+      {
+        "appointmentNo":"4",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"2:00 PM - 2:30 PM"
+      }
+      
+    ],
+    "appointmentAvailableDay": [1,3,4], 
+    "healthcareBuildingNo": "C-789",
+    "roomNo": "305",
+    "linkedHealthcareServiceId": 2
+  },
+  {
+    "id": 104,
+    "name": "Dr. Amanda Miller",
+    "contactNumber": "+9876543210",
+    "linkedinProfile": "https://www.linkedin.com/in/dr-amanda-miller",
+    "image": "https://img.freepik.com/free-photo/i-love-my-job-so-much_329181-2178.jpg",
+    "whatsapp": "+9876543210",
+    "educationalQualification": "MD in Pediatrics",
+    "specialistSection": "Pediatrics",
+    "appointmentSlots": [
+      {
+        "appointmentNo":"1",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"9:00 AM - 9:30 AM"
+      },
+      {
+        "appointmentNo":"2",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"10:00 AM - 10:30 AM"
+      },
+      {
+        "appointmentNo":"3",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"11:00 AM - 11:30 AM"
+      },
+      {
+        "appointmentNo":"4",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"2:00 PM - 2:30 PM"
+      }
+      
+    ],
+    "appointmentAvailableDay": [1,3,4], 
+    "healthcareBuildingNo": "D-123",
+    "roomNo": "105",
+    "linkedHealthcareServiceId": 4
+  },
+  {
+    "id": 105,
+    "name": "Dr. Mark Anderson",
+    "contactNumber": "+1122334455",
+    "linkedinProfile": "https://www.linkedin.com/in/dr-mark-anderson",
+    "image": "https://img.freepik.com/free-photo/doctor-smiling-with-stethoscope_1154-36.jpg",
+    "whatsapp": "+1122334455",
+    "educationalQualification": "Dentistry, Oral Surgery",
+    "specialistSection": "Dental Care",
+    "appointmentSlots": [
+      {
+        "appointmentNo":"1",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"9:00 AM - 9:30 AM"
+      },
+      {
+        "appointmentNo":"2",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"10:00 AM - 10:30 AM"
+      },
+      {
+        "appointmentNo":"3",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"11:00 AM - 11:30 AM"
+      },
+      {
+        "appointmentNo":"4",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"2:00 PM - 2:30 PM"
+      }
+      
+    ],
+    "appointmentAvailableDay": [1,3,4], 
+    "healthcareBuildingNo": "E-456",
+    "roomNo": "205",
+    "linkedHealthcareServiceId": 3
+  },
+  {
+    "id": 106,
+    "name": "Dr. Rachel Turner",
+    "contactNumber": "+9876543210",
+    "linkedinProfile": "https://www.linkedin.com/in/dr-rachel-turner",
+    "image": "https://img.freepik.com/free-photo/portrait-cheerful-male-doctor-dressed-uniform_171337-1531.jpg",
+    "whatsapp": "+9876543210",
+    "educationalQualification": "OB-GYN, Reproductive Health",
+    "specialistSection": "Women's Health",
+    "appointmentSlots": [
+      {
+        "appointmentNo":"1",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"9:00 AM - 9:30 AM"
+      },
+      {
+        "appointmentNo":"2",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"10:00 AM - 10:30 AM"
+      },
+      {
+        "appointmentNo":"3",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"11:00 AM - 11:30 AM"
+      },
+      {
+        "appointmentNo":"4",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"2:00 PM - 2:30 PM"
+      }
+      
+    ],
+    "appointmentAvailableDay": [1,3,4], 
+    "healthcareBuildingNo": "F-789",
+    "roomNo": "405",
+    "linkedHealthcareServiceId": 5
+  },
+  {
+    "id": 107,
+    "name": "Dr. Robert Turner",
+    "contactNumber": "+1122334455",
+    "linkedinProfile": "https://www.linkedin.com/in/dr-robert-turner",
+    "image": "https://img.freepik.com/free-photo/young-doctor-getting-ready-work_23-2149393694.jpg",
+    "whatsapp": "+1122334455",
+    "educationalQualification": "Orthopedics, Sports Medicine",
+    "specialistSection": "Orthopedic Care",
+    "appointmentSlots": [
+      {
+        "appointmentNo":"1",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"9:00 AM - 9:30 AM"
+      },
+      {
+        "appointmentNo":"2",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"10:00 AM - 10:30 AM"
+      },
+      {
+        "appointmentNo":"3",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"11:00 AM - 11:30 AM"
+      },
+      {
+        "appointmentNo":"4",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"2:00 PM - 2:30 PM"
+      }
+      
+    ],
+    "appointmentAvailableDay": [1,3,4], 
+    "healthcareBuildingNo": "G-123",
+    "roomNo": "305",
+    "linkedHealthcareServiceId": 6
+  },
+  {
+    "id": 108,
+    "name": "Dr. Laura Miller",
+    "contactNumber": "+9876543210",
+    "linkedinProfile": "https://www.linkedin.com/in/dr-laura-miller",
+    "image": "https://img.freepik.com/free-photo/female-doctor-hospital_23-2148827760.jpg",
+    "whatsapp": "+9876543210",
+    "educationalQualification": "Physical Therapy, Rehabilitation",
+    "specialistSection": "Rehabilitation Services",
+    "appointmentSlots": [
+      {
+        "appointmentNo":"1",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"9:00 AM - 9:30 AM"
+      },
+      {
+        "appointmentNo":"2",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"10:00 AM - 10:30 AM"
+      },
+      {
+        "appointmentNo":"3",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"11:00 AM - 11:30 AM"
+      },
+      {
+        "appointmentNo":"4",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"2:00 PM - 2:30 PM"
+      }
+      
+    ],
+    "appointmentAvailableDay": [1,3,4], 
+    "healthcareBuildingNo": "H-456",
+    "roomNo": "505",
+    "linkedHealthcareServiceId": 7
+  },
+  {
+    "id": 109,
+    "name": "Dr. Michelle Lewis",
+    "contactNumber": "+1122334455",
+    "linkedinProfile": "https://www.linkedin.com/in/dr-michelle-lewis",
+    "image": "https://img.freepik.com/free-photo/portrait-smiling-young-woman-doctor-healthcare-medical-worker-pointing-fingers-left-showing-clini_1258-88108.jpg",
+    "whatsapp": "+1122334455",
+    "educationalQualification": "Breast Health, Oncology",
+    "specialistSection": "Women's Health",
+    "appointmentSlots": [
+      {
+        "appointmentNo":"1",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"9:00 AM - 9:30 AM"
+      },
+      {
+        "appointmentNo":"2",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"10:00 AM - 10:30 AM"
+      },
+      {
+        "appointmentNo":"3",
+        "isBooked":false,
+        "bookingPatientDetails":{},
+        "time":"11:00 AM - 11:30 AM"
+      }]
+    }
+    ]
+      
