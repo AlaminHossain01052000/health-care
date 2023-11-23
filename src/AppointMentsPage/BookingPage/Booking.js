@@ -51,8 +51,8 @@ const Booking = () => {
             throw new Error('Network response was not ok');
           }
     
-          const data = await response.json();
-          console.log('Data created successfully:', data);
+          
+          
         } catch (error) {
           console.error('Error creating data:', error.message);
         }

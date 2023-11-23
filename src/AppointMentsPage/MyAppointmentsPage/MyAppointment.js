@@ -1,7 +1,7 @@
 import React from 'react';
 
 const MyAppointment = ({appointment}) => {
-    console.log(appointment)
+    
     const deleteAppointment=()=>{
        if(appointment?._id){
         fetch(`http://localhost:5000/appointments/${appointment._id}`, {

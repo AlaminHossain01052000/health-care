@@ -29,17 +29,17 @@ const SpecialistDetails = () => {
      
         
       }, [params,specialist]);
-    // console.log(param)
-    const {image,name,linkedinProfile,whatsapp,educationalQualification,specialistSection,healthcareBuildingNo,roomNo}=specialist||{};
-      console.log(image,name,linkedinProfile,whatsapp,educationalQualification,specialistSection,healthcareBuildingNo,roomNo)
+    
+    const {image,name,educationalQualification,specialistSection,healthcareBuildingNo,roomNo}=specialist||{};
+    
     return (
         <div className='container'>
-           <div class="card">
-  <img src={image} class="card-img-top mx-auto p-5" style={{"width":"50%","height":"50%"}} alt="..."/>
-  <div class="card-body">
-    <h1 class="card-text">{name}</h1>
-    <h2 class="card-text">{specialistSection}</h2>
-    <h3 class="card-text">{educationalQualification}</h3>
+           <div className="card">
+  <img src={image} className="card-img-top mx-auto p-5" style={{"width":"50%","height":"50%"}} alt="..."/>
+  <div className="card-body">
+    <h1 className="card-text">{name}</h1>
+    <h2 className="card-text">{specialistSection}</h2>
+    <h3 className="card-text">{educationalQualification}</h3>
     <h2 className='card-text mt-5'>Contact Details</h2>
     
     <div className="social-links mb-4">
@@ -52,16 +52,16 @@ const SpecialistDetails = () => {
               </div>
               <div className="facebook">
                 <a href="https://www.facebook.com/demo" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-whatsapp"></i>
+                <i className="fab fa-whatsapp"></i>
                   Whatsapp ({specialist.whatsapp})
                 </a>
               </div>
             </div>
     <h2 className='card-text mt-5'>Appointment Details</h2>
-    <h4 class="card-text">Bulding No : {healthcareBuildingNo}</h4>
-    <h4 class="card-text">Room No: {roomNo}</h4>
+    <h4 className="card-text">Bulding No : {healthcareBuildingNo}</h4>
+    <h4 className="card-text">Room No: {roomNo}</h4>
     <div className='d-flex mb-3'>
-    <h4 class="card-text">Available in : </h4>
+    <h4 className="card-text">Available in : </h4>
     {
     ['Temp', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun'].map((day,index)=>
       
@@ -73,7 +73,7 @@ const SpecialistDetails = () => {
     }
     </div>
     <div className='d-flex'>
-    <h4 class="card-text">Appointment Slots : </h4>
+    <h4 className="card-text">Appointment Slots : </h4>
     <div className='d-flex flex-column mb-3'>
     {
     appointmentSlots.map((obj,index)=>

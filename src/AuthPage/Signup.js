@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import  {auth} from '../firebase/firebase';
-import { createUserWithEmailAndPassword } from 'firebase/auth';
 import './Signup.css'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import useAuth from '../hooks/useAuth';
 
 const Signup = () => {
   // State to manage form fields
@@ -11,8 +10,10 @@ const Signup = () => {
     lastName: '',
     email: '',
     password: '',
+    repassword:''
   });
-
+  const navigate=useNavigate();
+  const { registerNewUser } = useAuth();
   // Handle form field changes
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -24,49 +25,29 @@ const Signup = () => {
   };
 
   // Handle form submission
-  const handleFormSubmit = async (e) => {
+  const handleFormSubmit =  (e) => {
     e.preventDefault();
-    // Add your signup logic here (e.g., API call, authentication, etc.)
-    console.log('Form submitted:', formData);
-    try {
-      const userCredential = await createUserWithEmailAndPassword(auth, formData.email, formData.password);
-      
-      // console.log(userCredential);
-      if(userCredential?.user?.uid){
-        const user = userCredential.user;
-        try {
-          const response = await fetch('http://localhost:5000/users', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(user),
-          });
-    
-          if (!response.ok) {
-            throw new Error('Network response was not ok');
-          }
-    
-          const data = await response.json();
-          localStorage.setItem('authToken',user.uid);
-          console.log('Data created successfully:', data);
-        } catch (error) {
-          console.error('Error creating data:', error.message);
-        }
-      }
-      
-      // console.log('User created successfully:', user);
-    } catch (error) {
-      console.error('Error during signup:', error.message);
+    if(formData.password!==formData.repassword){
+      alert("Password didn't matched.Try again")
     }
+    else{
+      registerNewUser(formData.firstName+' '+formData.lastName, formData.email, formData.password,navigate);
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        password: '',
+      });
+    }
+    
+
+    }
+      
+      
+    
     // Reset the form after submission
-    setFormData({
-      firstName: '',
-      lastName: '',
-      email: '',
-      password: '',
-    });
-  };
+    
+
 
   return (
     <div className='signup-container'>
@@ -111,6 +92,17 @@ const Signup = () => {
             type="password"
             name="password"
             value={formData.password}
+            onChange={handleInputChange}
+            required
+          />
+        </label>
+        <br />
+        <label className='signup-label'>
+          Confirm Password:
+          <input className="signup-input"
+            type="password"
+            name="repassword"
+            value={formData.repassword}
             onChange={handleInputChange}
             required
           />

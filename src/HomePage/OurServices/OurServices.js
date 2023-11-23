@@ -24,7 +24,7 @@ const OurServices = () => {
               <h1 className='services-heading'>Our Services</h1>
             </div>
           
-                <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div className="row row-cols-1 row-cols-md-3 g-4">
                 {
                     healthcareData.map(eachHealthcareData=>
                         <OurService eachHealthcareData={eachHealthcareData}/>

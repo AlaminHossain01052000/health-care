@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 // import MyAppointment from './MyAppointment';
 import './MyAppointments.css'
-import { isLoggedIn } from '../../Utils/isLoggedIn';
+import useAuth from '../../hooks/useAuth';
 
 const MyAppointments = () => {
     const [appointments, setAppointments] = useState([]);
-    const uid=isLoggedIn();
-    
+    const {user}=useAuth();
+    const uid=user.uid
   useEffect(() => {
     
     const fetchData = async () => {
@@ -23,8 +23,10 @@ const MyAppointments = () => {
     fetchData();
   }, [uid]);
   const deleteAppointment=(id)=>{
-   
-     fetch(`http://localhost:5000/appointments/${id}`, {
+    const userDecision = window.confirm("Do you want to proceed?");
+    if (userDecision) {
+        // User clicked OK
+        fetch(`http://localhost:5000/appointments/${id}`, {
              method: "Delete"
          })
              .then(res => res.json())
@@ -32,9 +34,15 @@ const MyAppointments = () => {
 
                  if (data?.deletedCount) {
                      alert("Data Deleted Succussfully");
+                     window.location.reload();
 
                  }
              })
+    } else {
+        // User clicked Cancel
+        
+    }
+     
     
          
      
@@ -53,7 +61,7 @@ const MyAppointments = () => {
           </tr>
         </thead>
         <tbody>
-          { appointments?.filter(appointment=>appointment?.user?.uid===uid)?.map((appointment, index) => (
+          { appointments?.filter(appointment=>appointment.user.uid===user.uid)?.map((appointment, index) => (
             <tr key={index}>
               <td className='appointment-td'>{appointment.specialist.name}</td>
               <td className='appointment-td'>{appointment.specialist.specialistSection}</td>

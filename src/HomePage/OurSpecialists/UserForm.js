@@ -2,10 +2,10 @@
 
 import React, { useState } from 'react';
 import './UserForm.css';
-import { isLoggedIn } from '../../Utils/isLoggedIn';
+import useAuth from '../../hooks/useAuth';
 
-const UserForm = ({user,specialist,date,slot}) => {
- 
+const UserForm = ({specialist,date,slot}) => {
+ const {user}=useAuth();
   const [formData, setFormData] = useState({
     gender: 'male',
     age: '',
@@ -24,7 +24,7 @@ const UserForm = ({user,specialist,date,slot}) => {
 
   const handleSubmit =async (e) => {
     e.preventDefault();
-    const uid=isLoggedIn();
+    const uid=user.uid
     const appointment={
       user:{
         _id:user._id,
@@ -48,7 +48,7 @@ const UserForm = ({user,specialist,date,slot}) => {
       slot,
       date:new Date()
     }
-  console.log(appointment)
+  
     if(appointment?.user?.uid){
       
       try {
@@ -64,9 +64,9 @@ const UserForm = ({user,specialist,date,slot}) => {
           throw new Error('Network response was not ok');
         }
   
-        const data = await response.json();
+        // const data = await response.json();
         
-        console.log('Data created successfully:', data);
+        alert("Appointment is booked successfully");
       } catch (error) {
         console.error('Error creating data:', error.message);
       }

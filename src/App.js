@@ -15,11 +15,13 @@ import MyAppointments from "./AppointMentsPage/MyAppointmentsPage/MyAppointments
 import './App.css'
 import Login from "./AuthPage/Login";
 import Signup from "./AuthPage/Signup";
+import AuthProvider from "./Shared/AuthProvider/AuthProvider";
 function App() {
   
   
   return (
-    <BrowserRouter>
+    <AuthProvider>
+      <BrowserRouter>
     <Navbar/>
       <Routes>
         <Route path="/" element={<HomepageRoot />} />
@@ -35,6 +37,8 @@ function App() {
         
       </Routes>
     </BrowserRouter>
+    </AuthProvider>
+    
   );
 }
 

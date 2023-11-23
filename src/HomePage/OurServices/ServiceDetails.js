@@ -31,19 +31,19 @@ const ServiceDetails = () => {
     
         fetchData();
       }, [params]);
-    console.log(service)
+    
     return (
-      <div class="card w-50 mx-auto my-5">
-      <img src={service.image} class="card-img-top h-75 w-75 mx-auto my-5" alt="..."/>
-      <div class="card-body">
-        <h1 class="card-title text-center">{service?.details?.title}</h1>
-        <h5 class="card-text my-5">{service?.details?.description}</h5>
+      <div className="card w-50 mx-auto my-5">
+      <img src={service.image} className="card-img-top h-75 w-75 mx-auto my-5" alt="..."/>
+      <div className="card-body">
+        <h1 className="card-title text-center">{service?.details?.title}</h1>
+        <h5 className="card-text my-5">{service?.details?.description}</h5>
         <div className='d-flex justify-content-around mt-5'>
         {
           service?.relatedSpecialists?.map(specialist=>
             <div>
             <div className='specialist-frame'onClick={()=>navigateToDetailsOfSpecialist(specialist.id)}>
-              <img src={specialist.image} class="specialist-img" alt="..."/>
+              <img src={specialist.image} className="specialist-img" alt="..."/>
             </div>
             <p className='text-center mt-3'>{specialist.name}</p>
             </div>
