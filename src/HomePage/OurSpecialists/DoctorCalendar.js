@@ -90,6 +90,10 @@ const navigatingToUserFormPage=(slot)=>{
         alert("Sorry the Doctor is busy in that slot. Try another one!");
         return;
       }
+      if(i.user.uid===user.uid&&string1===string2&&i.slot.appointmentNo===appNo){
+        alert(`You have a previous appointment on that day with ${i.specialist.name}`)
+        return
+      }
     }
     
   const appointmentDetails={
