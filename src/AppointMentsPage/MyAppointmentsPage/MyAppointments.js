@@ -55,9 +55,10 @@ const MyAppointments = () => {
             <th className='appointment-th'>Doctor Name</th>
             <th className='appointment-th'>Doctor Specialization</th>
             <th className='appointment-th'>Appointment Date</th>
+            <th className='appointment-th'>Appointment Time</th>
             <th className='appointment-th'>Building No</th>
             <th className='appointment-th'>Room No</th>
-            <th className='appointment-th'>Action</th>
+            <th className='appointment-th'>Cancel</th>
           </tr>
         </thead>
         <tbody>
@@ -66,6 +67,7 @@ const MyAppointments = () => {
               <td className='appointment-td'>{appointment.specialist.name}</td>
               <td className='appointment-td'>{appointment.specialist.specialistSection}</td>
               <td className='appointment-td'>{appointment.appointmentDate}</td>
+              <td className='appointment-td'>{appointment.slot.time}</td>
               <td className='appointment-td'>{appointment.specialist.healthcareBuildingNo}</td>
               <td className='appointment-td'>{appointment.specialist.roomNo}</td>
               <td className='appointment-td'>

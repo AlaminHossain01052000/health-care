@@ -3,9 +3,14 @@
 import React, { useState } from 'react';
 import './UserForm.css';
 import useAuth from '../../hooks/useAuth';
+import { useLocation } from 'react-router-dom';
 
-const UserForm = ({specialist,date,slot}) => {
- const {user}=useAuth();
+const UserForm = () => {
+  const {user}=useAuth()
+  const location=useLocation();
+  const {slot,specialist,value}=location.state.appointmentDetails
+  // const params=useLocation();
+  
   const [formData, setFormData] = useState({
     gender: 'male',
     age: '',
@@ -24,6 +29,8 @@ const UserForm = ({specialist,date,slot}) => {
 
   const handleSubmit =async (e) => {
     e.preventDefault();
+    
+
     const uid=user.uid
     const appointment={
       user:{
@@ -44,7 +51,7 @@ const UserForm = ({specialist,date,slot}) => {
         roomNo: specialist.roomNo,
         linkedHealthcareServiceId:specialist.linkedHealthcareServiceId
       },
-      appointmentDate:date,
+      appointmentDate:value,
       slot,
       date:new Date()
     }
@@ -65,7 +72,13 @@ const UserForm = ({specialist,date,slot}) => {
         }
   
         // const data = await response.json();
-        
+        setFormData({
+          gender: 'male',
+          age: '',
+          height: '',
+          weight: '',
+          comments: '',
+        })
         alert("Appointment is booked successfully");
       } catch (error) {
         console.error('Error creating data:', error.message);
@@ -74,7 +87,8 @@ const UserForm = ({specialist,date,slot}) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className='userform-form'>
+    <form onSubmit={handleSubmit} className='userform-form' style={{marginTop:
+      "20px"}}>
       <label className="userform-label">
         Gender:
         <select name="gender" value={formData.gender} onChange={handleChange}>
@@ -130,7 +144,7 @@ const UserForm = ({specialist,date,slot}) => {
         />
       </label>
 
-      <button className='userform-button' type="submit" data-bs-dismiss="modal" aria-label="Close">Submit</button>
+      <button className='userform-button' type="submit">Submit</button>
     </form>
   );
 };

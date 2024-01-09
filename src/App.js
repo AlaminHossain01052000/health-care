@@ -16,6 +16,7 @@ import './App.css'
 import Login from "./AuthPage/Login";
 import Signup from "./AuthPage/Signup";
 import AuthProvider from "./Shared/AuthProvider/AuthProvider";
+import UserForm from "./HomePage/OurSpecialists/UserForm";
 function App() {
   
   
@@ -33,6 +34,7 @@ function App() {
         <Route path="/services/:id" element={<ServiceDetails />} />
         <Route path="/booking" element={<Booking />} />
         <Route path="/myAppointments" element={<MyAppointments />} />
+        <Route path="/userForm" element={<UserForm />} />
         
         
       </Routes>
